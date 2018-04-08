@@ -1,0 +1,17 @@
+{
+  "name": "creature-generator",
+  "version": "0.0.1",
+  "description": "inspired by DF",
+  "main": "index.js",
+  "author": "Eirik Birkeland",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.4.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-flow": "^6.23.0",
+    "babel-watch": "^2.0.7",
+    "parcel-bundler": "^1.7.0",
+    "regenerator-runtime": "^0.11.1"
+  }
+}
