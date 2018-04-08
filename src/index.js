@@ -17,6 +17,10 @@ export class Game {
       one.die();
     }
   }
+
+  static log (...str : Array<string>) {
+    return console.log(...str);
+  }
 };
 
 export class Creature {
@@ -65,11 +69,11 @@ export class Creature {
 
   attack(enemy : Creature) {
     enemy.hp -= this.atk;
-    console.log(`${this.name} attacks ${enemy.name}, inflicting ${this.atk} damage.`);
+    Game.log(`${this.name} attacks ${enemy.name}, inflicting ${this.atk} damage.`);
   }
 
   die() {
     this.isAlive = false;
-    console.log(`${this.nick} the ${this.name} dies in agony.`, this.gfx);
+    Game.log(`${this.nick} the ${this.name} dies in agony.`, this.gfx);
   }
 };
